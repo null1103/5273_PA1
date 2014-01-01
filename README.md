@@ -1,5 +1,5 @@
-PROGRAMMING ASSIGNMENT - 1                                                                         UDP Socket Programming
--------------------------------------------------------------------------------------------------------------------------
+PA1 - UDP Socket Programming
+-----------------------------
 CSCI 5273 (Network Systems)                                                            
 University of Colorado at Boulder
 
