@@ -1,9 +1,8 @@
 PA1 - UDP Socket Programming
 -----------------------------
-CSCI 5273 (Network Systems)                                                            
-University of Colorado at Boulder
+CSCI 5273 - University of Colorado at Boulder
 
-### PURPOSE
+#### PURPOSE
 
 1. An appropriate understanding of C language.
 2. An understanding of tools (compilers in Linux, shell,etc).
@@ -11,7 +10,7 @@ University of Colorado at Boulder
 
 In this assignment, you will build two programs in C, one for the client which will simply send a command and the other for a server which will send a suitable response back to the client.
 
-### PROGRAM REQUIREMENTS
+#### PROGRAM REQUIREMENTS
 
 #### The client:
 
