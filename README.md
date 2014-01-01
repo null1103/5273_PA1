@@ -1,7 +1,8 @@
-PROGRAMMING ASSIGNMENT - 1                                                                    CSCI 5273 (Network Systems)
-==========================================================================================================================
-UDP Socket Programming                                                                  University of Colorado at Boulder
+PROGRAMMING ASSIGNMENT - 1                                                                         UDP Socket Programming
 -------------------------------------------------------------------------------------------------------------------------
+CSCI 5273 (Network Systems)                                                            
+University of Colorado at Boulder
+
 ### PURPOSE
 
 1. An appropriate understanding of C language.
