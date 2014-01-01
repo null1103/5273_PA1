@@ -1,7 +1,7 @@
 PROGRAMMING ASSIGNMENT - 1                                                                    CSCI 5273 (Network Systems)
+==========================                                                                    ==========================
 UDP Socket Programming                                                                  University of Colorado at Boulder
-==========================================================================================================================
-
+----------------------                                                                  ---------------------------------
 PURPOSE
 
 1. An appropriate understanding of C language.
@@ -12,8 +12,7 @@ In this assignment, you will build two programs in C, one for the client which w
 
 PROGRAM REQUIREMENTS
 
-The client:
-----------
+#### The client:
 
 1. The client must take two command line arguments: an IP address of the machine on which the server application is     
    running, and the port the server application is using. [The IP address can be obtained using hostname -i . Type man
@@ -30,8 +29,7 @@ The client:
 4. Then it must wait for the server's response. Once the server responds, it should print appropriate messages, if any, on
    the standard output.
 
-The server:
------------
+#### The server:
 
 1. The server must take one command line argument: a port number for the server to use. You should select port #'s > 5000.
 
@@ -55,8 +53,7 @@ Both the client and the server should be in a loop. For the purpose of this assi
 
 The client side should contain at least three files with their names hard-coded as foo1, foo2, and foo3.
 
-What To Turn In:
-----------------
+#### What To Turn In:
 
 You should test your programs thoroughly so that they do not crash or hang. Your code must be organized and clear with comments/explanations for your functions and arguments.  Please turn in one tar file containing two .c source files one readme.txt file and one Makefile. The Makefile must compile both client.c and server.c into their respective executables.  The readme.txt file must explain what you have done and how to run it. The documentation does not have to be long, but does have to be very clear.   The code that you turn in for this programming assignment must be your own original work and must compile and run on the CSEL machines. Upload the tar file containing the following files via the moodle.
 
@@ -68,8 +65,7 @@ makefile – compiles “client.c” and “server.c” into “client” and �
 
 README.txt file
 
-Getting Started:
----------------
+#### Getting Started:
 
 (Please read as this may answer some of your questions)
 
@@ -85,8 +81,7 @@ Run the server by typing : ./server [port_number]
 Then run the client by typing : ./client [ip_address] [port_number]
 The IP address is the server's IP address. The port number is the server's port number. You are informing the client where the server is located. You can test your application locally by running both the client and the server on the same machine. In this case, you can type localhost in place of the IP address.  Feel free to use these files as a baseline for your design. You will have to modify parts of the code, especially for the server where parsing of the message is required.
 
-Header Files:
--------------
+#### Header Files:
 
 Examine the code in the provided programs. The list of header files that need to be introduced in the socket programming are listed below.
 
@@ -98,8 +93,7 @@ arpa/inet.h : The header file contains definitions for internet operations.
 
 netdb.h : This header file contains definitions for network database operations.
 
-Functions:
-----------
+#### Functions:
 
 A brief explanation of some of the functions used in the code is provided here. However, for in depth understanding of the functions, please read the manpages of the functions.
 
@@ -127,8 +121,7 @@ ssize_t recvfrom( int sockfd, void *buff, size_t nbytes, int flags, struct socka
 
 Note: It will be beneficial if you read the Beej’s Socket Programming guide (provided as a reference in this assignment) before starting the actual assignment.
 
-Non-blocking client (not required)
-----------------------------------
+#### Non-blocking client (not required)
 
 Also, on the client side, it may be beneficial for you to configure a non-blocking socket, so the client does not lock up waiting for a message from the server in recvfrom(). If the socket receive buffer is empty for a blocking UDP socket, the calling application is put to sleep until a UDP datagram arrives. If a non-blocking UDP socket cannot return a complete datagram, then it returns immediately with an error status of EWOULDBLOCK, which you should check for. To set a socket as non-blocking, use fcntl(). A typical line might look like:
 
